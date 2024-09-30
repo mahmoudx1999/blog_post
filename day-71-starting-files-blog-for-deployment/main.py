@@ -12,7 +12,6 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 import os 
 
-load_dotenv('.evn')
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('API_KEY')
